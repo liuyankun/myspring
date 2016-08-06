@@ -11,7 +11,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 @Component
-@Aspect
+//@Aspect
 public class ServiceAspect {
 
 	@Pointcut("execution(* com.lyk.myspring.user.service..*(..))")

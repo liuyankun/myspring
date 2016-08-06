@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
 public class TestTask {
 
 	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
-	@Scheduled(cron = "*/10 * * * * *")
-    public void reportCurrentTime() {
+	//@Scheduled(cron = "*/10 * * * * *")
+    private void reportCurrentTime() {
         System.out.println("The time is now " + dateFormat.format(new Date()));
     }
 }

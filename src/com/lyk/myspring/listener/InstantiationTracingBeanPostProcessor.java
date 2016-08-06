@@ -9,6 +9,6 @@ public class InstantiationTracingBeanPostProcessor implements ApplicationListene
 	      if(event.getApplicationContext().getParent() == null){//root application context 没有parent，他就是老大.
 	           
 	      }
-	      System.out.println("=======qidon");
+	   //   System.out.println("=======qidon");
 	  }
 }

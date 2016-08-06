@@ -25,7 +25,13 @@
 	<!-- 默认的注解映射的支持 -->
 	<mvc:annotation-driven />
 	<!-- 定时任务-->
-	<task:annotation-driven/> 
+	<!-- executor线程池，含义和java.util.concurrent.Executor是一样的,pool-size的大小官方推荐为5~10 -->
+    <!-- <task:executor id="executor" pool-size="5" />
+    scheduler的pool-size是ScheduledExecutorService线程池，默认为1
+    <task:scheduler id="scheduler" pool-size="5" />
+    <task:annotation-driven executor="executor"
+        scheduler="scheduler" /> -->
+	<task:annotation-driven/>
 	
 	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 

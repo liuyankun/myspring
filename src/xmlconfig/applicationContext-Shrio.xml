@@ -29,6 +29,7 @@
             <value>  
                 /login/login=anon  
                 /login/getVerifyCodeImage=anon  
+                /weixin/verify=anon
                 /main/main**=authc  
                 /user/info**=authc  
                 /admin/listUser**=authc,perms[admin:manage]  
